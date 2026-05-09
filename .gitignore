@@ -1,0 +1,16 @@
+# Build artifacts
+*.img
+*.zip
+*.tar.gz
+
+# Workspace dirs (if you clone this repo into ~/twrp/ as your workspace)
+src/
+out/
+ccache/
+logs/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
