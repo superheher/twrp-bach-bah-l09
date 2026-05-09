@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="los" fetch="https://github.com/LineageOS/" />
+
+  <project name="Huawei-Dev/android_device_huawei_bach"
+           path="device/huawei/bach"
+           remote="github"
+           revision="ten" />
+
+  <project name="Huawei-Dev/android_kernel_huawei_bach"
+           path="kernel/huawei/bach"
+           remote="github"
+           revision="ten" />
+
+  <project name="Huawei-Dev/android_vendor_huawei_bach"
+           path="vendor/huawei/bach"
+           remote="github"
+           revision="ten" />
+
+  <project name="android_device_qcom_sepolicy"
+           path="device/qcom/sepolicy-legacy-um"
+           remote="los"
+           revision="lineage-17.1-legacy-um" />
+
+  <!-- Re-add what remove-minimal.xml/remove.xml strip but Soong needs to parse the tree -->
+  <project path="test/vts-testcase/hal"
+           name="platform/test/vts-testcase/hal"
+           remote="aosp"
+           revision="refs/tags/android-10.0.0_r41" />
+
+  <!-- system/bpf provides bpf_defaults that external/bcc references -->
+  <project path="system/bpf"
+           name="platform/system/bpf"
+           remote="aosp"
+           revision="refs/tags/android-10.0.0_r41" />
+
+  <!-- libcryptfs_hw needed by TWRP's libcryptfsfde for FDE support -->
+  <project path="vendor/qcom/opensource/cryptfs_hw"
+           name="android_vendor_qcom_opensource_cryptfs_hw"
+           remote="los"
+           revision="lineage-17.1" />
+
+  <!-- cryptfshw HIDL @1.0 needed by libcryptfs_hw -->
+  <project path="vendor/qcom/opensource/interfaces"
+           name="android_vendor_qcom_opensource_interfaces"
+           remote="los"
+           revision="lineage-17.1" />
+</manifest>
