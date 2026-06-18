@@ -1,5 +1,7 @@
 # TWRP for Huawei MediaPad M3 Lite 10 (bach / BAH-L09)
 
+![Downloads](https://img.shields.io/github/downloads/superheher/twrp-bach-bah-l09/total)
+
 TWRP recovery 3.5.2_10-0 for the Huawei MediaPad M3 Lite 10, codename **bach**, model **BAH-L09**. Built from the [TWRP minimal-manifest twrp-10.0-deprecated branch](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp/tree/twrp-10.0-deprecated) plus device tree from [Huawei-Dev/android_device_huawei_bach@ten](https://github.com/Huawei-Dev/android_device_huawei_bach).
 
 > **Pre-built recovery image is in [Releases](../../releases/latest).**
